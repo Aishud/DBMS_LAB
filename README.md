@@ -31,7 +31,7 @@ a. Create a database by name Library. Drop the database and re-create it.
 
 b. Create DDL statements and create the tables and constraints (from the design) in
 
-the
+
 
 database created in step-a (Library) Notes: [ Create a script file and execute it.
 
