@@ -74,4 +74,38 @@
 14. Display details of first two employees whose id starts from ‘E102’ and have salary < 30000 using CURSOR.
 15. To write a Cursor to display the Department wise list of Employees with total Salary in each department. 
     Function and Procedure
-16. Write a function that takes employee name as parameter and returns the number of employees with this name. Use the function to update details of employees with         unique names. For other cases, the program (not the function) should display error
+16. Write a function that takes employee name as parameter and returns the number of employees with this name. Use the function to update details of employees with         unique names. For other cases, the program (not the function) should display error messages-“No Employee” or “Multiple employees”.
+
+17. Write a procedure to update the specified employee name to uppercase. The
+
+procedure has a single parameter the employee name. The procedure should also
+
+display all the fields of affected tuples. If no tuple is affected, an error message is
+
+displayed.
+
+18. Create a procedure which will receive account_id and amount to withdraw. If the
+
+account does not exist, it will display a message. Otherwise, if the account exists, it
+
+will allow the withdrawal only if the new balance after the withdrawal is atleast
+
+1000.
+
+Trigger
+
+19. Create a trigger on employee table such that whenever a row is deleted, it is moved
+
+to history table named ‘emp_history’ with the same structure as employee table.
+
+‘Emp_history’ will contain an additional column “date_of_deletion” to store the
+
+date on which the row is removed.
+
+20. Create a trigger on employee table such that whenever a new employee record is
+
+inserted, the employee’s seniority position is calculated based on the year of
+
+experience and when an employee’s record is deleted ,update the seniority position
+
+of other employees accordingly.
