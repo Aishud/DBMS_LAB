@@ -20,3 +20,8 @@ CREATE TRIGGER t_up BEFORE UPDATE  ON member
 FOR EACH ROW  
  INSERT INTO historytable VALUES(OLD.Member_id,OLD.Name,OLD.Branch_code,OLD.Roll_no,OLD.Email,OLD.Date_of_join,OLD.Status);
 END $
+
+DELIMITER ;
+INSERT INTO member VALUES(27,'ARJUN',657,22,'arj@gmail.com','2020-10-19','Regular');
+UPDATE member SET roll_no=26 WHERE member_id=27;
+SELECT * FROM historytable;
